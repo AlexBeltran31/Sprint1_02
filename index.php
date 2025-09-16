@@ -9,3 +9,7 @@ echo $string, $int, $double, $boolean . "\n";
 echo $string . "\n";
 echo $int + $double . "\n";
 echo $boolean ? "true" : "false" . "\n";
+
+define("NAME", "Alex Beltran");
+echo "\n---" . NAME . "---\n";
+?>
