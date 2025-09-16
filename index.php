@@ -1,0 +1,11 @@
+<?php
+
+$int = 250;
+$double = 2.5;
+$string = "This is a text chain";
+$boolean = true;
+echo $string, $int, $double, $boolean . "\n";
+
+echo $string . "\n";
+echo $int + $double . "\n";
+echo $boolean ? "true" : "false" . "\n";
