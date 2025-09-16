@@ -12,4 +12,13 @@ echo $boolean ? "true" : "false" . "\n";
 
 define("NAME", "Alex Beltran");
 echo "\n---" . NAME . "---\n";
-?>
+
+//ex 2
+$message = "Hello World!";
+echo $message . "\n";
+echo strtoupper($message) . "\n";
+echo strlen($message) . "\n";
+echo strrev($message) . "\n";
+
+$extra = "This is the PHP course";
+echo $message . " " . $extra . "\n";
