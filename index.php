@@ -22,3 +22,28 @@ echo strrev($message) . "\n";
 
 $extra = "This is the PHP course";
 echo $message . " " . $extra . "\n";
+
+//ex 3
+// a)
+$x = 31;
+$y = 24;
+$n = 5.5;
+$m = 12.9;
+
+echo $x + $y . "\n";
+echo $x - $y . "\n";
+echo $x * $y . "\n";
+echo $x % $y . "\n";
+
+echo $n + $m . "\n";
+echo $n - $m . "\n";
+echo $n * $m . "\n";
+echo $n % $m . "\n";
+
+echo "El doble de $x es " . ($x * 2) . "\n";
+echo "El doble de $y es " . ($y * 2) . "\n";
+echo "El doble de $n es " . ($n * 2) . "\n";
+echo "El doble de $m es " . ($m * 2) . "\n";
+
+echo "La suma de todas las variabes es " . ($x + $y + $n + $m) . "\n";
+echo "El producto de todas las variables es " . ($x * $y * $n * $m) . "\n";
