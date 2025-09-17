@@ -10,7 +10,7 @@ echo $string . "\n";
 echo $int + $double . "\n";
 echo $boolean ? "true" : "false" . "\n";
 
-define("NAME", "Alex Beltran");
+const NAME = "Alex Beltran";
 echo "\n---" . NAME . "---\n";
 
 //ex 2
