@@ -112,3 +112,14 @@ echo checkGrade(35) . "\n";
 echo checkGrade(80) . "\n";
 echo checkGrade(120) . "\n";
 echo checkGrade(0) . "\n"; // Error
+
+// ex 6
+function isBitten() {
+    return (rand(0, 1) === 1);
+}
+
+if (isBitten()) {
+    echo "Charlie bit you!";
+} else {
+    echo "Charlie didn't bite you!";
+}
