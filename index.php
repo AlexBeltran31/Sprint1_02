@@ -91,3 +91,24 @@ countUpTo();
 countUpTo(20);
 countUpTo(30, 2);
 countUpTo("diez", 4); // Error!
+echo "\n";
+
+// ex 5
+function checkGrade($grade) {
+    if ($grade >= 60 && $grade <=100) {
+        return "First Division!";
+    } elseif ($grade >= 45 && $grade <= 59) {
+        return "Second Division";
+    } elseif ($grade >= 33 && $grade <= 44) {
+        return "Third Division";
+    } elseif ($grade <= 32) {
+        return "Failed";
+    } else {
+        return "Error";
+    }
+}
+
+echo checkGrade(35) . "\n";
+echo checkGrade(80) . "\n";
+echo checkGrade(120) . "\n";
+echo checkGrade(0) . "\n"; // Error
