@@ -63,7 +63,7 @@ function calculate($num1, $num2, $operation) {
             return $num1 * $num2;
         case "divide":
             return $num1 / $num2;
-            
+
         default:
     return "Error: invalid operation.";
     }
@@ -74,4 +74,20 @@ echo calculate(20, 6, "substract") . "\n"; // 14
 echo calculate(31, 12, "multiply") . "\n"; // 372
 echo calculate(12, 2, "divide") . "\n"; // 6
 echo calculate(12, "ocho", "sum") . "\n"; // Error!
-echo calculate(10,5, "sumar") . "\n"; // Error!
+echo calculate(10, 5, "sumar") . "\n"; // Error!
+
+// ex 4
+function countUpTo($max = 10, $steps = 1) {
+    if (!is_numeric($max) || !is_numeric($steps)) {
+        echo "Error: Both parameters must be numbers.";
+        return;
+    }
+    for ($i = 0; $i <= $max; $i += $steps) {
+        echo $i . "\n";
+    }
+}
+
+countUpTo();
+countUpTo(20);
+countUpTo(30, 2);
+countUpTo("diez", 4); // Error!
