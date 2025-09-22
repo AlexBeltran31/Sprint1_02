@@ -4,7 +4,7 @@ $int = 250;
 $double = 2.5;
 $string = "This is a text chain";
 $boolean = true;
-echo $string, $int, $double, $boolean . "\n";
+echo $string . " " . $int . " " . $double . " " . $boolean . "\n";
 
 echo $string . "\n";
 echo $int + $double . "\n";
@@ -30,15 +30,15 @@ $y = 24;
 $n = 5.5;
 $m = 12.9;
 
-echo $x + $y . "\n";
-echo $x - $y . "\n";
-echo $x * $y . "\n";
-echo $x % $y . "\n";
+echo "x + y = " . ($x + $y) . "\n";
+echo "x - y = " . ($x - $y) . "\n";
+echo "x * y = " . ($x * $y) . "\n";
+echo "x % y = " . ($x % $y) . "\n";
 
-echo $n + $m . "\n";
-echo $n - $m . "\n";
-echo $n * $m . "\n";
-echo $n % $m . "\n";
+echo "n + m = " . ($n + $m) . "\n";
+echo "n - m = " . ($n - $m) . "\n";
+echo "n * m = " . ($n * $m) . "\n";
+echo "n % m = " . ($n % $m) . "\n";
 
 echo "El doble de $x es " . ($x * 2) . "\n";
 echo "El doble de $y es " . ($y * 2) . "\n";
@@ -47,3 +47,31 @@ echo "El doble de $m es " . ($m * 2) . "\n";
 
 echo "La suma de todas las variabes es " . ($x + $y + $n + $m) . "\n";
 echo "El producto de todas las variables es " . ($x * $y * $n * $m) . "\n";
+
+// b)
+function calculate($num1, $num2, $operation) {
+    if (!is_numeric($num1) || !is_numeric($num2)) {
+        return "Error: Both parameters must be numbers.";
+    }
+
+    switch ($operation) {
+        case "sum":
+            return $num1 + $num2;
+        case "substract":
+            return $num1 - $num2;
+        case "multiply":
+            return $num1 * $num2;
+        case "divide":
+            return $num1 / $num2;
+            
+        default:
+    return "Error: invalid operation.";
+    }
+}
+
+echo calculate(12, 8, "sum") . "\n"; // 20
+echo calculate(20, 6, "substract") . "\n"; // 14
+echo calculate(31, 12, "multiply") . "\n"; // 372
+echo calculate(12, 2, "divide") . "\n"; // 6
+echo calculate(12, "ocho", "sum") . "\n"; // Error!
+echo calculate(10,5, "sumar") . "\n"; // Error!
